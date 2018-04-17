@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.phant.zadanie5.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:text="Wybierz numer z kontaktów lub informacje na dany temat :-)"
+        android:textSize="30dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:clickable="true"
+        app:fabSize="normal"
+        app:srcCompat="@android:drawable/ic_dialog_info"
+        android:id="@+id/search"
+        app:backgroundTint="@android:color/holo_blue_dark"
+        android:onClick="search"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="65dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp" />
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/ctc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="65dp"
+        app:srcCompat="@android:drawable/ic_menu_call"
+        app:backgroundTint="@android:color/holo_red_dark"
+        android:layout_gravity="bottom|right"
+        app:fabSize="normal" />
+
+</android.support.design.widget.CoordinatorLayout>
